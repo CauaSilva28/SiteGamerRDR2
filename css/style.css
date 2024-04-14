@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root, :root[data-theme='dark']{
+    --primary-bg-color: #000;
+    --secundary-bg-color: #8c000057;
+
+    --default-color:#8C0000;
+    --secundary-default-color:#440000;
+
+    --toggle-color:#000;
+
+    --text-color: #fff;
+    --link-color: #BDBDBD;
+    --title-color: #8C0000;
+}
+
+:root[data-theme='light']{
+    --primary-bg-color: #A01010;
+    --secundary-bg-color: #00000057;
+
+    --default-color:#8C0000;
+    --secundary-default-color:#490000;
+
+    --toggle-color:#fff;
+
+    --text-color: #000;
+    --link-color: #BDBDBD;
+    --title-color: #fff;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track {
+    background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #640000;
+    border-radius:2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #360000;
+}
+
+*{
+    margin:0;
+    padding:0;
+}
+
+body{
+    background-color:var(--primary-bg-color);
+}
+
+a{
+    text-decoration: none;
+    cursor:pointer;
+}
+
+.header{
+    background-color: var(--secundary-bg-color);
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:1vw 3vw 1vw 3vw;
+    margin:1vw;
+    position:fixed;
+    width:92%;
+    box-shadow:2px 2px 7px 2px #000;
+    z-index:10;
+}
+
+.header-link{
+    color:var(--link-color);
+    font-family:"barlow", sans-serif;
+    font-weight:700;
+    font-size:1.1vw;
+    cursor:pointer;
+    transition:ease-in-out 0.5s;
+}
+
+.header-link:hover{
+    color:var(--default-color);
+}
+
+.header-logo{
+    width:3vw;
+    height:3vw;
+}
+
+.header-icons{
+    display:flex;
+    gap:3vw;
+}
+
+.header-nav{
+    display:flex;
+    align-items:center;
+    gap:5vw;
+}
+
+.header-nav ul li{
+    list-style:none;
+}
+
+.header-nav ul{
+    display:flex;
+    gap:5vw;
+}
+
+#toggletheme{
+    color:var(--toggle-color);
+    font-weight:800;
+    font-size:1.1vw;
+    cursor:pointer;
+    transition:ease-in-out 0.5s;
+}
+
+#toggletheme:hover{
+    color:#dde0a9;
+}
+
+/*-------------FIM HEADER --------------*/
+
+#home{
+    position:relative;
+    background-image:url(../img/fundohome.jpg);
+    background-size:cover;
+    /* background-attachment: fixed; */
+    background-position: center;
+    width:100%;
+    height:45vw;
+}
+
+.home-img{
+    width:35vw;
+    position:absolute;
+    left:3vw;
+    bottom:0;
+    z-index:1;
+}
+
+.home-logoimg{
+    width:50vw;
+}
+
+.home-start{
+    position:absolute;
+    top:12vw;
+    left:40vw;
+    text-align:center;
+    flex-direction: column;
+    display:flex;
+    align-items:center;
+}
+
+.home-text{
+    color:#fff;
+    font-size:1.1vw;
+    font-family:"barlow", sans-serif;
+    width:50vw;
+}
+
+.home-buttons{
+    display:flex;
+    position:absolute;
+    top:37vw;
+    left:50vw;
+    gap:8vw;
+}
+
+.home-button1{
+    font-size:1.2vw;
+    font-family:"barlow", sans-serif;
+    padding:1.2vw;
+    border-radius:0.5rem;
+    background-color: var(--default-color);
+    border:none;
+    color:#fff;
+    width:12vw;
+    box-shadow:2px 2px 5px 2px #000;
+    cursor:pointer;
+    transition:ease-in-out 0.5s;
+}
+
+.home-button1:hover{
+    background-color:var(--secundary-default-color);
+}
+
+.home-button2{
+    font-size:1.2vw;
+    font-family:"barlow", sans-serif;
+    font-weight:500;
+    padding:1.2vw;
+    border-radius:0.5rem;
+    background-color:transparent;
+    border:2px solid var(--default-color);
+    color:var(--default-color);
+    width:12vw;
+    box-shadow:2px 2px 5px 2px var(--secundary-bg-color);
+    cursor:pointer;
+    transition:ease-in-out 0.5s;
+}
+
+.home-button2:hover{
+    border:2px solid var(--secundary-default-color);;
+    color:var(--secundary-default-color);;
+}
+/* --------- FIM HOME -------------*/
