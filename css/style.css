@@ -92,7 +92,7 @@ a{
     color:var(--default-color);
 }
 
-.header-logo{
+#header-logo{
     width:3vw;
     height:3vw;
 }
