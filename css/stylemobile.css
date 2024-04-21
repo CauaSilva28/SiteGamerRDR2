@@ -89,6 +89,10 @@
     /* ------------- FIM HOME MOBILE -------------- */
 
     /* ------------- HISTÓRIA MOBILE -------------- */
+    #story{
+        margin-top:5vw;
+    }
+
     h1{
         font-size:5vw;
     }
