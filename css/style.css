@@ -6,6 +6,9 @@
     --primary-bg-color: #000;
     --secundary-bg-color: #8c000057;
 
+    --mobile-bg-color: #8c0000;
+    --secundary-mobile-bg-color: #000;
+
     --default-color:#8C0000;
     --secundary-default-color:#440000;
 
@@ -19,6 +22,9 @@
 :root[data-theme='light']{
     --primary-bg-color: #A01010;
     --secundary-bg-color: #00000086;
+
+    --mobile-bg-color: #000;
+    --secundary-mobile-bg-color: #8c0000;
 
     --default-color:#8C0000;
     --secundary-default-color:#490000;
@@ -117,7 +123,7 @@ a{
     gap:5vw;
 }
 
-#toggletheme{
+.header-icons #toggletheme{
     color:var(--toggle-color);
     font-weight:800;
     font-size:1.25vw;
@@ -125,7 +131,7 @@ a{
     transition:ease-in-out 0.5s;
 }
 
-#toggletheme:hover{
+.header-icons #toggletheme:hover{
     color:#dde0a9;
 }
 
@@ -322,3 +328,81 @@ h1{
     opacity:70%;
     color:var(--default-color);
 }
+/* --------- FIM HISTÓRIA -------------*/
+
+/* ------------- NAV MOBILE -------------- */
+#nav-mobile{
+    background-color:var(--mobile-bg-color);
+    display:none;
+    flex-direction: column;
+    align-items: center;
+    position:fixed;
+    right:0;
+    padding:3vw;
+    border-radius:6px;
+    z-index:10;
+}
+
+.nav-mobile-items{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top:3vw;
+    margin-bottom:3vw;
+}
+
+.nav-mobile-text, .icon-mobile{
+    color:var(--link-color);
+    cursor:pointer;
+    transition: ease-in-out 0.5s;
+}
+
+.nav-mobile-items:hover .nav-mobile-text,
+.nav-mobile-items:hover .icon-mobile,
+.nav-mobile-text:hover,
+.icon-mobile:hover{
+    color:var(--secundary-mobile-bg-color);
+}
+
+.nav-mobile-text{
+    font-family:"barlow", sans-serif;
+    font-weight: 600;
+    font-size:2.25vw;
+}
+
+.icon-mobile{
+    font-size:4vw;
+    margin-top:3vw;
+}
+
+.nav-mobile-redes{
+    display:flex;
+    gap:3vw;
+    margin-top:5vw;
+}
+
+.nav-mobile-link{
+    color:#868686;
+    transition: ease-in-out 0.5s;
+}
+
+.nav-mobile-link:hover{
+    color:#420000;
+}
+
+#nav-mobile #toggletheme{
+    color:var(--toggle-color);
+    margin-top:4vw;
+    font-size:4vw;
+    cursor:pointer;
+    transition:ease-in-out 0.5s;
+}
+
+#nav-mobile #toggletheme:hover{
+    color:#dde0a9;
+}
+
+#navbar-mobile{
+    display:none;
+}
+/* ------------- FIM NAV MOBILE -------------- */

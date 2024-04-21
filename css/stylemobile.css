@@ -1,0 +1,129 @@
+@media(max-width: 900px){
+    /* ------------- HEADER MOBILE -------------- */
+    .header{
+        background-color: var(--secundary-bg-color);
+        display:flex;
+        justify-content:space-between;
+        align-items:center;
+        padding:1vw 3vw 1vw 3vw;
+        margin:1vw;
+        position:fixed;
+        width:92%;
+        box-shadow:0.2vw 0.2vw 7px 2px #000;
+        z-index:10;
+    }
+
+    #header-logo{
+        width:8vw;
+        height:8vw;
+    }
+
+    #navbar-mobile, #navbar-mobile2{
+        display:flex;
+        cursor:pointer;
+        color:var(--link-color);
+        font-size:5vw;
+        transition:ease-in-out 0.5s;
+    }
+    #navbar-mobile2:hover{
+        color:var(--secundary-mobile-bg-color);
+    }
+    #navbar-mobile:hover{
+        color:var(--default-color);
+    }
+
+    .header-nav ul{
+        display:none;
+    }
+
+    .header-icons{
+        display:none;
+    }
+
+    #nav-mobile{
+        display:none;
+    }
+    /* ------------- FIM HEADER MOBILE -------------- */
+
+    /* ------------- HOME MOBILE -------------- */
+    #home{
+        width:100%;
+        height:65vw;
+    }
+
+    .home-img{
+        width:45vw;
+        left:2vw;
+    }
+    
+    .home-logoimg{
+        width:55vw;
+    }
+    
+    .home-start{
+        top:18vw;
+        left:40vw;
+    }
+    
+    .home-text{
+        font-size:2vw;
+        width:55vw;
+    }
+    
+    .home-buttons{
+        top:52vw;
+        left:48vw;
+    }
+    
+    .home-button1{
+        font-size:2vw;
+        padding:1.5vw;
+        width:15vw;
+    }
+    
+    .home-button2{
+        font-size:2vw;
+        padding:1.5vw;
+        width:18vw;
+    }
+    /* ------------- FIM HOME MOBILE -------------- */
+
+    /* ------------- HISTÓRIA MOBILE -------------- */
+    h1{
+        font-size:5vw;
+    }
+    
+    .story-text{
+        font-size:2.8vw;
+        margin:0vw 10vw 0vw 10vw;
+    }
+    
+    .story-nav{
+        flex-direction: column;
+        align-items:center;
+    }
+    
+    .story-imagenav{
+        width:50vw;
+        height:68vw;
+        margin-top:5vw;
+    }
+    
+    .story-imagenav2{
+        width:50vw;
+        height:68vw;
+        margin-top:5vw;
+    }
+    
+    .story-imagenav3{
+        width:50vw;
+        height:68vw;
+        margin-top:5vw;
+    }
+    
+    .story-imgtext{
+        font-size:4vw;
+        margin-bottom:5vw;
+    }
+    /* ------------- FIM HISTÓRIA MOBILE -------------- */
+}
