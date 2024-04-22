@@ -8,12 +8,6 @@ const navbarMobile = document.getElementById('nav-mobile');
 const iconNav = document.getElementById('navbar-mobile');
 const iconNav2 = document.getElementById('navbar-mobile2');
 
-window.addEventListener('resize', function() {
-    if (window.innerWidth > 900) {
-        navbarMobile.style.display = 'none';
-    }
-});
-
 //Alternar modo light e dark
 function changeTheme(){
     const currentTheme = rootHtml.getAttribute('data-theme');
@@ -37,6 +31,7 @@ function changeTheme(){
 toggleTheme.addEventListener('click', changeTheme);
 toggleThemeMobile.addEventListener('click', changeTheme);
 
+// Ativar e desativar nav
 function AtivarNav(){
     navbarMobile.style.display = 'flex';
 }
@@ -49,3 +44,9 @@ function DesativarNav(){
 
 iconNav.addEventListener('click', AtivarNav);
 iconNav2.addEventListener('click', DesativarNav);
+
+window.addEventListener('resize', function() {
+    if (window.innerWidth > 900) {
+        navbarMobile.style.display = 'none';
+    }
+});
