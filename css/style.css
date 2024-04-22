@@ -123,7 +123,7 @@ a{
     gap:5vw;
 }
 
-.header-icons #toggletheme{
+#toggletheme{
     color:var(--toggle-color);
     font-weight:800;
     font-size:1.25vw;
@@ -131,7 +131,7 @@ a{
     transition:ease-in-out 0.5s;
 }
 
-.header-icons #toggletheme:hover{
+#toggletheme:hover{
     color:#dde0a9;
 }
 
@@ -390,7 +390,7 @@ h1{
     color:#420000;
 }
 
-#nav-mobile #toggletheme{
+#toggletheme-mobile{
     color:var(--toggle-color);
     margin-top:4vw;
     font-size:4vw;
@@ -398,7 +398,7 @@ h1{
     transition:ease-in-out 0.5s;
 }
 
-#nav-mobile #toggletheme:hover{
+#toggletheme-mobile:hover{
     color:#dde0a9;
 }
 
