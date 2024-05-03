@@ -112,19 +112,21 @@
         align-items:center;
     }
     
-    .story-imagenav{
+    #story-imagenav{
         width:50vw;
         height:68vw;
         margin-top:5vw;
     }
     
-    .story-imagenav2{
+    #story-imagenav2{
+        display:none;
         width:50vw;
         height:68vw;
         margin-top:5vw;
     }
     
-    .story-imagenav3{
+    #story-imagenav3{
+        display:none;
         width:50vw;
         height:68vw;
         margin-top:5vw;
@@ -133,6 +135,10 @@
     .story-imgtext{
         font-size:4vw;
         margin-bottom:5vw;
+    }
+
+    .story-botoespassar{
+        display:flex;
     }
     /* ------------- FIM HISTÓRIA MOBILE -------------- */
 }

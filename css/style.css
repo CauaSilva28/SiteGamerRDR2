@@ -270,7 +270,7 @@ h1{
     margin-top:3vw;
 }
 
-.story-imagenav{
+#story-imagenav{
     width:20vw;
     height:28vw;
     background-image:url(../img/storyimginicio.png);
@@ -283,7 +283,7 @@ h1{
     transition:ease-in-out 0.5s;
 }
 
-.story-imagenav2{
+#story-imagenav2{
     width:20vw;
     height:28vw;
     background-image:url(../img/storyimgdev.png);
@@ -296,7 +296,7 @@ h1{
     transition:ease-in-out 0.5s;
 }
 
-.story-imagenav3{
+#story-imagenav3{
     width:20vw;
     height:28vw;
     background-image:url(../img/storyimgfim.png);
@@ -321,12 +321,27 @@ h1{
     transition:ease-in-out 0.5s;
 }
 
-.story-imagenav:hover .story-imgtext, .story-imagenav:hover,
-.story-imagenav2:hover .story-imgtext, .story-imagenav2:hover,
-.story-imagenav3:hover .story-imgtext, .story-imagenav3:hover{
+#story-imagenav:hover .story-imgtext, #story-imagenav:hover,
+#story-imagenav2:hover .story-imgtext, #story-imagenav2:hover,
+#story-imagenav3:hover .story-imgtext, #story-imagenav3:hover{
     scale:1.05;
     opacity:70%;
     color:var(--default-color);
+}
+
+.story-botoespassar{
+    display:none;
+    align-items:center;
+    justify-content: center;
+    margin-top:9vw;
+    gap:4.5vw;
+}
+
+.story-botoespassar button{
+    width:3vw;
+    height:3vw;
+    border:none;
+    border-radius:5rem;
 }
 /* --------- FIM HISTÓRIA -------------*/
 
