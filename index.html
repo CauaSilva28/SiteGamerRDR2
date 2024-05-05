@@ -20,8 +20,8 @@
             <ul>
                 <li><a class="header-link" href="#home">Home</a></li>
                 <li><a class="header-link" href="#story">Story</a></li>
-                <li><a class="header-link" href="#characters">Characters</a></li>
-                <li><a class="header-link" href="#guide">Guide</a></li>
+                <li><a class="header-link" href="#personagens">Characters</a></li>
+                <li><a class="header-link" href="#guia">Guide</a></li>
             </ul>
         </nav>
 
@@ -46,11 +46,11 @@
             <i class="icon-mobile bi bi-file-text-fill"></i>
             <span class="nav-mobile-text">Story</span>
         </div></a>
-        <a href="#characters"><div class="nav-mobile-items">
+        <a href="#personagens"><div class="nav-mobile-items">
             <i class="icon-mobile bi bi-person-fill"></i>
             <span class="nav-mobile-text">Characters</span>
         </div></a>
-        <a href="#guide"><div class="nav-mobile-items">
+        <a href="#guia"><div class="nav-mobile-items">
             <i class="icon-mobile bi bi-book-fill"></i>
             <span class="nav-mobile-text">Guide</span>
         </div></a>
@@ -77,7 +77,7 @@
             <a href="https://store.steampowered.com/app/1174180/Red_Dead_Redemption_2/" target="_blank"><button class="home-button2">Comprar jogo</button></a>
         </div>
     </section>
-    <hr class="lines-transition">
+    <hr class="lines-transitionT">
     <section id="story">
         <h1>História</h1>
 
@@ -86,24 +86,42 @@
         </div>
 
         <div class="story-nav">
-            <a href=""><div id="story-imagenav">
+            <a href=""><div class="story-elements" id="story-imagenav">
                 <span class="story-imgtext">Início</span>
             </div></a>
-            <a href=""><div id="story-imagenav2">
+            <a href=""><div class="story-elements" id="story-imagenav2">
                 <span class="story-imgtext">Desenvolvimento</span>
             </div></a>
-            <a href=""><div id="story-imagenav3">
+            <a href=""><div class="story-elements" id="story-imagenav3">
                 <span class="story-imgtext">Fim</span>
             </div></a>
         </div>
 
         <div class="story-botoespassar">
-            <button id="story-btn1"></button>
-            <button id="story-btn2"></button>
-            <button id="story-btn3"></button>
+            <button class="story-btn active"></button>
+            <button class="story-btn"></button>
+            <button class="story-btn"></button>
         </div>
     </section>
-
+    <hr class="lines-transitionB">
+    <section id="personagens">
+        <i id="fases_setaL" class="bi bi-chevron-left"></i>
+        <div class="perso-items">
+            <h1>Personagens</h1>
+            <div class="perso-imgtext">
+                <img id="perso-img" src="img/persoarthur.png">
+                <div class="perso-descricao">
+                    <h2 id="perso-title">Arthur Morgan</h2>
+                    <p id="perso-text">No fim, Arthur descobre estar com tuberculose. A situação se deteriora rapidamente, com Dutch tomando decisões cada vez mais desastrosas e Arthur perdendo a fé em seu líder. O clímax se desenrola com Arthur descobrindo que Micah é um informante da Pinkerton, levando a um confronto final onde Dutch abandona Arthur. Nos momentos finais, Arthur incentiva John a fugir e começar uma nova vida com sua família.</p>
+                </div>
+            </div>
+        </div>
+        <i id="fases_setaR" class="bi bi-chevron-right"></i>
+    </section>
+    <hr class="lines-transitionT">
+    <section id="guia">
+        <h1>guia de jogabilidade</h1>
+    </section>
     <script src="js/script.js"></script>
 </body>
 </html>

@@ -4,17 +4,6 @@ const rootHtml = document.documentElement;
 
 const headerLogo = document.getElementById('header-logo');
 
-const navbarMobile = document.getElementById('nav-mobile'); 
-const iconNav = document.getElementById('navbar-mobile');
-const iconNav2 = document.getElementById('navbar-mobile2');
-
-const btnstory1 = document.getElementById('story-btn1');
-const btnstory2 = document.getElementById('story-btn2');
-const btnstory3 = document.getElementById('story-btn3');
-const storyimg = document.getElementById('story-imagenav');
-const storyimg2 = document.getElementById('story-imagenav2');
-const storyimg3 = document.getElementById('story-imagenav3');
-
 //Alternar modo light e dark
 function changeTheme(){
     const currentTheme = rootHtml.getAttribute('data-theme');
@@ -35,10 +24,14 @@ function changeTheme(){
     toggleThemeMobile.classList.toggle('bi-sun');
 }
 
-toggleTheme.addEventListener('click', changeTheme);
+toggleTheme.addEventListener('click', changeTheme); //Adicionando evento de click
 toggleThemeMobile.addEventListener('click', changeTheme);
 
 // Ativar e desativar nav
+const navbarMobile = document.getElementById('nav-mobile'); 
+const iconNav = document.getElementById('navbar-mobile');
+const iconNav2 = document.getElementById('navbar-mobile2');
+
 function AtivarNav(){
     navbarMobile.style.display = 'flex';
 }
@@ -53,59 +46,48 @@ iconNav.addEventListener('click', AtivarNav);
 iconNav2.addEventListener('click', DesativarNav);
 
 //Botões passar imagem story
-btnstory1.style.background = 'var(--default-color)';
-btnstory1.style.scale = '1.3';
+const storyBtn = document.querySelectorAll('.story-btn');
+const storyElements = document.querySelectorAll('.story-elements');
 
-function passarbtn1(){
-    storyimg.style.display = 'flex';
-    storyimg2.style.display = 'none';
-    storyimg3.style.display = 'none';
-    btnstory1.style.backgroundColor = 'var(--default-color)';
-    btnstory1.style.scale = '1.3';
-    btnstory2.style.backgroundColor = '#fff';
-    btnstory2.style.scale = '1';
-    btnstory3.style.backgroundColor = '#fff';
-    btnstory3.style.scale = '1';
-}
-function passarbtn2(){
-    storyimg2.style.display = 'flex';
-    storyimg.style.display = 'none';
-    storyimg3.style.display = 'none';
-    btnstory2.style.backgroundColor = 'var(--default-color)';
-    btnstory2.style.scale = '1.3';
-    btnstory1.style.backgroundColor = '#fff';
-    btnstory1.style.scale = '1';
-    btnstory3.style.backgroundColor = '#fff';
-    btnstory3.style.scale = '1';
-}
-function passarbtn3(){
-    storyimg3.style.display = 'flex';
-    storyimg2.style.display = 'none';
-    storyimg.style.display = 'none';
-    btnstory3.style.backgroundColor = 'var(--default-color)';
-    btnstory3.style.scale = '1.3';
-    btnstory2.style.backgroundColor = '#fff';
-    btnstory2.style.scale = '1';
-    btnstory1.style.backgroundColor = '#fff';
-    btnstory1.style.scale = '1';
-}
+storyBtn.forEach(function(item, index) { // Pega todos os elementos da variavel storyBtn
+    item.addEventListener("click", function() {
+        // Remove a classe "active" de todos os botões
+        storyBtn.forEach(function(btn) {
+            btn.classList.remove("active");
+        });
+        // Adiciona a classe "active" apenas ao botão clicado
+        item.classList.add("active");
 
-btnstory1.addEventListener('click', passarbtn1);
-btnstory2.addEventListener('click', passarbtn2);
-btnstory3.addEventListener('click', passarbtn3);
+        // Esconde todos os elementos de história
+        storyElements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+
+        // Mostra o elemento de história correspondente ao botão clicado
+        const targetElement = storyElements[index];
+        if (targetElement) {
+            targetElement.style.display = 'flex';
+        }
+    });
+});
 
 //resize
-window.addEventListener('resize', function() {
-    if (window.innerWidth > 900) {
+window.addEventListener('resize', function() { // Adiciona eventos de acordo com o tamanho da tela
+    if (window.innerWidth > 900) { // Ajusta os elementos quando a tela for MAIOR que 900px
         navbarMobile.style.display = 'none';
-        storyimg.style.display = 'flex';
-        storyimg2.style.display = 'flex';
-        storyimg3.style.display = 'flex';
+        storyElements.forEach(function(element) {
+            element.style.display = 'flex';
+        }); // Deixa todos os elementos da const storyElements com display flex
+
+        storyBtn.forEach(function(btn) {
+            btn.classList.remove('active');
+        }); // Remove a classe active de todos os elementos da const storyBtn
+        storyBtn[0].classList.add('active'); // Ativa a classe active apenas no primeiro elemento
     }
-    else{
-        passarbtn1();
-        storyimg.style.display = 'flex';
-        storyimg2.style.display = 'none';
-        storyimg3.style.display = 'none';
+    else{ // Ajusta os elementos quando a tela for MENOR que 900px
+        storyElements.forEach(function(element) {
+            element.style.display = 'none';
+        });
+        storyElements[0].style.display = 'flex';
     }
 });
