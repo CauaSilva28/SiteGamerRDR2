@@ -163,7 +163,6 @@
         margin-top:1vw;
         border-radius:10rem;
         background-color:var(--default-color);
-        box-shadow:2px 4px 10px 4px #000;
     }
     #perso-title{
         font-size:6vw;
