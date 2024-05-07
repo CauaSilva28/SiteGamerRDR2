@@ -91,3 +91,27 @@ window.addEventListener('resize', function() { // Adiciona eventos de acordo com
         storyElements[0].style.display = 'flex';
     }
 });
+
+//Transicao aparecer scroll
+const myObserver = new IntersectionObserver(function(entries){
+    // Cria um novo objeto IntersectionObserver com uma função de callback.
+    entries.forEach(function(entry) {
+        // Para cada entrada (elemento observado) que o observador detectou:
+        if(entry.isIntersecting){
+            // Se o elemento está intersectando o viewport (visível na tela):
+            entry.target.classList.add('transicao');
+            // Adiciona a classe 'transicao' ao elemento observado.
+        }
+        else{
+            // Se o elemento não está intersectando o viewport (não visível na tela):
+            entry.target.classList.remove('transicao');
+            // Remove a classe 'transicao' do elemento observado.
+        }
+    });
+});
+
+const elements = document.querySelectorAll('.localaparecer');
+const elements2 = document.querySelectorAll('.localsurgir');
+
+elements.forEach((element) => myObserver.observe(element));
+elements2.forEach((element) => myObserver.observe(element));
