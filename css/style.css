@@ -324,7 +324,7 @@ h1{
     transition:ease-in-out 0.5s;
 }
 
-.story-imgtext{
+.imgtext{
     color:#fff;
     font-family:"barlow", arial, sans-serif;
     font-weight:800;
@@ -336,9 +336,9 @@ h1{
     transition:ease-in-out 0.5s;
 }
 
-#story-imagenav:hover .story-imgtext, #story-imagenav:hover,
-#story-imagenav2:hover .story-imgtext, #story-imagenav2:hover,
-#story-imagenav3:hover .story-imgtext, #story-imagenav3:hover{
+#story-imagenav:hover .imgtext, #story-imagenav:hover,
+#story-imagenav2:hover .imgtext, #story-imagenav2:hover,
+#story-imagenav3:hover .imgtext, #story-imagenav3:hover{
     scale:1.05;
     opacity:70%;
     color:var(--default-color);
@@ -457,6 +457,7 @@ h1{
     font-size:2.5vw;
     color:#fff;
     transition: ease-in-out 0.2s;
+    cursor:pointer;
 }
 #personagens i:hover{
     color:var(--default-color);
@@ -497,8 +498,47 @@ h1{
 /* ------------- GUIA -------------- */
 #guia{
     margin-top:2vw;
+    display:flex;
+    flex-direction: column;
+    gap:4vw;
 }
 
+.guia-items{
+    display:flex;
+    align-items:center;
+    justify-content:space-around;
+    margin-bottom:-2vw;
+}
+.guia-elements{
+    width:18vw;
+    height:25vw;
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center;
+    border:2px inset var(--title-color);
+    border-radius:0.5rem;
+    display:flex;
+    flex-direction: column;
+    justify-content:flex-end;
+    cursor:pointer;
+    transition:ease-in-out 0.5s;
+}
+.guia-elements:hover .imgtext, .guia-elements:hover{
+    scale:1.05;
+    opacity:70%;
+    color:var(--default-color);
+}
+/* ------------- FIM GUIA -------------- */
+footer{
+    background-color:var(--secundary-default-color);
+    margin-top:6vw;
+    font-family:"barlow", sans-serif;
+    font-weight: 500;
+    font-size:1vw;
+    text-align:center;
+    padding:1vw 0vw;
+    color:#fff;
+}
 /* Transicao com scroll */
 .localaparecer{
     opacity:0;
