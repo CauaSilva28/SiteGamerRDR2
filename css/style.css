@@ -67,6 +67,7 @@ body{
 a{
     text-decoration: none;
     cursor:pointer;
+    color:var(--link-color);
 }
 
 h1{
@@ -506,8 +507,9 @@ h1{
 .guia-items{
     display:flex;
     align-items:center;
-    justify-content:space-around;
-    margin-bottom:-2vw;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap:10vw;
 }
 .guia-elements{
     width:18vw;
