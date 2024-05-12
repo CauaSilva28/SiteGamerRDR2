@@ -551,7 +551,7 @@ footer{
     opacity:0;
     filter:blur(10px);
     transition:all 1s;
-    transform:translateX(-100%);
+    transform:translateY(40%);
 }
 
 .transicao{
