@@ -181,6 +181,10 @@
     }
     /* ------------- FIM PERSONAGENS -------------- */
     /* ------------- GUIA -------------- */
+    #guia{
+        margin-top:5vw;
+    }
+
     .guia-elements{
         width:40vw;
         height:55vw;
