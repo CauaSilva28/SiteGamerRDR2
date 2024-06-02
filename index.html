@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <link rel="shortcut icon" href="img/logo.png">
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"> <!-- biblioteca de animação com scroll style -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/stylemobile.css">
@@ -64,7 +65,7 @@
         </div>
     </nav>
 
-    <section id="home" class="localaparecer">
+    <section id="home" data-aos="fade-zoom-in" data-aos-duration="2000">
         <img src="img/personagemhomeimg.png" class="home-img"/>
 
         <div class="home-start">
@@ -85,7 +86,7 @@
             <span>A história se passa em 1899 em uma recriação fictícia do Velho Oeste americano e acompanha a vida de Arthur Morgan e sua posição na notória gangue Van der Linde, que precisa lidar com seu declínio da gangue enquanto eles são perseguidos por agentes da lei, gangues rivais e agentes Pinkerton.</span>
         </div>
 
-        <div class="story-nav localsurgir">
+        <div class="story-nav" data-aos="fade-up" data-aos-duration="1500">
             <a href=""><div class="story-elements" id="story-imagenav">
                 <span class="imgtext">Início</span>
             </div></a>
@@ -106,9 +107,9 @@
     <hr class="lines-transitionB">
     <section id="personagens">
         <i id="perso-setaL" class="bi bi-chevron-left"></i>
-        <div class="perso-items">
+        <div class="perso-items" data-aos="fade-zoom-in" data-aos-duration="1500">
             <h1>Personagens</h1>
-            <div class="perso-imgtext localaparecer">
+            <div class="perso-imgtext">
                 <img id="perso-img" src="img/persoarthur.png">
                 <div class="perso-descricao">
                     <h2 id="perso-title">Arthur Morgan</h2>
@@ -121,7 +122,7 @@
     <hr class="lines-transitionT">
     <section id="guia">
         <h1>guia de jogabilidade</h1>
-        <div class="guia-items localsurgir">
+        <div class="guia-items" data-aos="fade-right" data-aos-duration="1500">
             <div class="guia-elements" style="background-image:url(img/imgguia1.png);">
                 <span class="imgtext">Cavalos</span>
             </div>
@@ -144,6 +145,8 @@
     </section>
 
     <footer>₢<a href="https://github.com/CauaSilva28" target="_blank">Cauã Silva</a> - Site Red Dead Redemption 2 - Projeto desenvolvido para treinamento pessoal</footer>
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script> <!-- biblioteca de animação com scroll script -->
     <script src="js/script.js"></script>
 </body>
 </html>
