@@ -48,11 +48,11 @@
     /* ------------- HOME MOBILE -------------- */
     #home{
         width:100%;
-        height:65vw;
+        height:75vw;
     }
 
     .home-img{
-        width:45vw;
+        width:48vw;
         left:2vw;
     }
     
@@ -61,28 +61,28 @@
     }
     
     .home-start{
-        top:18vw;
+        top:22vw;
         left:40vw;
     }
     
     .home-text{
-        font-size:2vw;
+        font-size:2.2vw;
         width:55vw;
     }
     
     .home-buttons{
-        top:52vw;
-        left:48vw;
+        top:61vw;
+        left:50vw;
     }
     
     .home-button1{
-        font-size:2vw;
+        font-size:2.2vw;
         padding:1.5vw;
-        width:15vw;
+        width:17vw;
     }
     
     .home-button2{
-        font-size:2vw;
+        font-size:2.2vw;
         padding:1.5vw;
         width:18vw;
     }
