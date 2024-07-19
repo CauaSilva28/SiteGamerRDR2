@@ -543,3 +543,7 @@ footer{
     padding:1vw 0vw;
     color:#fff;
 }
+
+footer a:hover{
+    color:var(--default-color);
+}
