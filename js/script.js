@@ -39,10 +39,18 @@ document.addEventListener('DOMContentLoaded', () => {
     if(tema === 'claro'){
         rootHtml.setAttribute('data-theme', 'dark');
         headerLogo.src ='img/logodark.png';
+        toggleTheme.classList.add('bi-sun');
+        toggleThemeMobile.classList.add('bi-sun');
+        toggleTheme.classList.remove('bi-moon-fill');
+        toggleThemeMobile.classList.remove('bi-moon-fill');
     }
     else if(tema === 'escuro'){
         rootHtml.setAttribute('data-theme', 'light');
         headerLogo.src = 'img/logolight.png';
+        toggleTheme.classList.add('bi-moon-fill');
+        toggleThemeMobile.classList.add('bi-moon-fill');
+        toggleTheme.classList.remove('bi-sun');
+        toggleThemeMobile.classList.remove('bi-sun');
     }
 });
 
