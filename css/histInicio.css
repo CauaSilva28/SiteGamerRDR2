@@ -135,3 +135,73 @@
 .fechado{
     display:none;
 }
+
+@media(max-width: 900px){
+    #inicioHist{
+        padding-top:20vw;
+        gap:3vw;
+    }
+    
+    .inicioHist-text{
+        font-size:3.5vw;
+        padding:0vw 10vw;
+    }
+    
+    #cardsInicioHist{
+        margin-top:10vw;
+        gap:5vw;
+    }
+    
+    .card1{
+        height:55vw;
+        width:95%;
+    }
+    
+    .card2{
+        height:55vw;
+        width:95%;
+    }
+    
+    .card3{
+        height:55vw;
+        width:95%;
+    }
+    
+    .cardL .card-aberto{
+        background-image: linear-gradient(-90deg,var(--mobile-bg-color) 10%, transparent);
+        padding:0vw 3vw 0vw 1vw;
+    }
+    
+    .cardR .card-aberto{
+        background-image: linear-gradient(90deg,var(--mobile-bg-color) 10%, transparent);
+        padding:0vw 1vw 0vw 3vw;
+    }
+    
+    .card-conjunto{
+        display:flex;
+        gap:1vw;
+        flex-direction: column;
+        width:60vw;
+    }
+    
+    .cardL .card-titulo{
+        font-size:3.5vw;
+    }
+    
+    .cardR .card-titulo{
+        font-size:3.5vw;
+    }
+    
+    .card-text{
+        font-size:2.5vw;
+    }
+    
+    .inicioHist-seta{
+        font-size:4vw;
+    }
+    
+    .card-fechado{
+        padding-left:1vw;
+        width:6vw;
+    }
+}

@@ -159,7 +159,7 @@
         margin-top:-3vw;
     }
     #perso-img{
-        width:45vw;
+        height:50vw;
         margin-top:1vw;
         border-radius:10rem;
         background-color:var(--default-color);
